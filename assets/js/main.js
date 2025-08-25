@@ -141,3 +141,13 @@
   window.addEventListener("load", initSwiper);
 
 })();
+
+// modal 닫힐 때 실행
+document.querySelectorAll('.modal').forEach(modal => {
+  modal.addEventListener('hidden.bs.modal', function () {
+    const iframe = modal.querySelector('iframe');
+    if (iframe) {
+      iframe.src = iframe.src; // src 초기화 → 자동으로 재생 멈춤
+    }
+  });
+});
