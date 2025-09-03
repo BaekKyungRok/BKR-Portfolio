@@ -67,7 +67,7 @@
 
   /**
    * Preloader
-   */
+   
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
@@ -78,7 +78,7 @@
         preloader.remove();
       }, 2000);
     });
-  }
+  }*/
 
   /**
    * Scroll top button
@@ -103,7 +103,7 @@
 
   /**
    * Animation on scroll function and init
-   */
+    */
   function aosInit() {
     AOS.init({
       duration: 600,
@@ -123,7 +123,7 @@
 
   /**
    * Init swiper sliders
-   */
+   
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
       let config = JSON.parse(
@@ -138,11 +138,10 @@
     });
   }
 
-  window.addEventListener("load", initSwiper);
+  window.addEventListener("load", initSwiper); */
 
-})();
 
-// modal 닫힐 때 실행
+  // modal 닫힐 때 실행
 document.querySelectorAll('.modal').forEach(modal => {
   modal.addEventListener('hidden.bs.modal', function () {
     const iframe = modal.querySelector('iframe');
@@ -151,3 +150,8 @@ document.querySelectorAll('.modal').forEach(modal => {
     }
   });
 });
+
+
+})(); 
+
+
